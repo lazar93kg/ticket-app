@@ -1,0 +1,512 @@
+/* Barcode Font */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&family=Sansita:ital,wght@0,900;1,800&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #231F42;
+
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  margin: 4px;
+}
+
+body h2 {
+  font-family: 'Sansita One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #F56B9A;
+}
+
+.App {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  width: 375px;
+  background-color: #231F42;
+  height: 100vh;
+}
+
+.App p {
+  padding: 0;
+}
+
+/* Main Page */
+
+.mainpage {
+  width: 38vw;
+  height: 100%;
+  background-color: #231F42;
+}
+
+.mainlogo {
+  margin-top: 20vh;
+  width: 182px;
+  height: 178px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+
+/* Events Page */
+
+.event-card {
+  display: grid;
+  grid-template-columns: 80px 200px 80px;
+}
+
+.ec-date {
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+  border: 2px solid pink;
+  display: grid;
+  align-items: center;
+}
+
+.ec-date p {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.ec-info {
+  margin-left: 25px;
+  width: 180px;
+  text-align: left;
+  border-bottom: 2px solid gray;
+
+}
+
+.ec-info:hover {
+  cursor: pointer;
+}
+
+.ec-info h3,
+i,
+p {
+  margin: 0;
+
+}
+
+.ec-info p {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0.5rem;
+}
+
+.ec-info h3 {
+  margin-top: 1.3rem;
+  font-family: 'Sansita', sans-serif;
+  color: #FFFFFF;
+}
+
+.ec-info i {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+
+
+}
+
+.ec-price {
+  color: turquoise;
+  grid-column: 3/4;
+  margin-top: 90%;
+  border-bottom: 2px solid gray;
+}
+
+.ob-price-display {
+  border: 1px solid #F56B9A;
+  width: 200px;
+}
+
+.ob-price {
+  display: block;
+  margin-top: 20px;
+}
+
+.ob-menu {
+  border-top: 1px solid #F56B9A;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  margin-top: 0;
+  padding-top: 0;
+  text-align: center;
+
+}
+
+input {
+  width: 330px;
+  height: 40px;
+  background: url('img/Vector.png') no-repeat scroll 7px 10px;
+  background-color: #393555;
+  padding-left: 35px;
+  color: white;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.order-btn-right {
+  background-color: transparent;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 1px solid #F56B9A;
+  color: white;
+}
+
+.order-btn-left {
+  background-color: transparent;
+  border-right: 1px solid #F56B9A;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+  color: white;
+}
+
+.btn {
+  width: 310px;
+  height: 60px;
+  background: #37AEAB;
+  border-radius: none;
+  border: none;
+  margin-top: 20px;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+/* Single Event Page  */
+
+.order-page p {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 19px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.order-box {
+  display: grid;
+  justify-content: center;
+}
+
+.order-box p {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+
+}
+
+.order-box span {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  color: #37AEAB;
+
+
+}
+
+.order-box h1 {
+  font-family: 'Sansita One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  color: #F56B9A;
+  margin-bottom: 10px;
+
+}
+
+.order-page {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 19px;
+  color: rgba(255, 255, 255, 0.8);
+
+
+}
+
+.event-menu {
+  border-top: 1px solid #F56B9A;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  margin-top: 0;
+  padding-top: 0;
+  text-align: center;
+
+}
+
+.event {
+  border: 1px solid #F56B9A;
+  margin-top: 40px;
+}
+
+.event span {
+  padding: 5px;
+  font-size: 1.3rem;
+  font-family: 'Sansita One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #F56B9A;
+}
+
+.event h3,
+.checkout-total h3 {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 0px #F56B9A;
+
+
+}
+
+/* Order Page */
+
+.orders-menu {
+  border-top: 1px solid #F56B9A;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  margin-top: 0;
+  padding-top: 0;
+  text-align: center;
+
+}
+
+.orders {
+  border: 1px solid #F56B9A;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.orders h4 {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  font-family: 'Sansita One';
+  font-style: normal;
+  font-weight: 400;
+  color: #F56B9A;
+}
+
+.orders p {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #37AEAB;
+}
+
+.orders-menu p {
+  margin: auto;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+body button {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+}
+
+.event-menu p,
+.orders-menu p {
+  font-family: 'Fira Sans';
+  font-size: 1.3rem;
+}
+
+.btn-back {
+  padding: 10px;
+  width: 3rem;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  ;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+
+
+/* Tickets Page */
+
+.ticket-receipt {
+  width: 311px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.34);
+  border-radius: 3px;
+}
+
+.ticket-receipt h1 {
+  font-family: 'Sansita One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  color: #F56B9A;
+  text-align: left;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+
+.tr-place {
+  width: 311px;
+  height: 120px;
+  border-top: 1.5px dotted black;
+  border-bottom: 1.5px dotted black;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.tr-place h3 {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: left;
+  margin-left: 20px;
+}
+
+.tr-date {
+  width: 311px;
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+  background: rgba(0, 0, 0, 0.06);
+  border-bottom: 1.5px dotted black;
+}
+
+.tr-date h3 {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
+  display: grid;
+  grid-area: 2;
+  margin-top: 0;
+}
+
+.ticket-receipt p {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+  margin-left: 20px;
+}
+
+.ticket-receipt h4 {
+  padding-top: 10px;
+}
+
+.ticket-receipt-box h4 {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  text-align: left;
+  margin-left: 20px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.tr-date h4 {
+  display: grid;
+  justify-content: left;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.div-dot {
+  border-left: 1.5px dotted black;
+  border-right: 1.5px dotted black;
+}
+
+.barcode h1 {
+  font-family: 'Libre Barcode 128', cursive;
+  color: rgba(0, 0, 0, 0.876);
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.barcode {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.tr-info {
+  width: 311px;
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 3px 3px;
+
+}
+
+.tr-info h4 {
+  margin-top: 0;
+}
+
+.barcode h4 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 0;
+  padding: 0;
+}
